@@ -8,7 +8,7 @@
 <body>
     <h1>Blog</h1>
     {% if 'usuario_id' in session %}
-        <p>Logado como {{ session['nome_usuario'] }}</p>
+        <p>Olá, {{ session['nome_usuario'] }}! Bem-vindo(a) de volta!</p>
         <a href="{{ url_for('logout') }}">Sair</a>
         <a href="{{ url_for('criar_postagem') }}">Criar postagem</a>
     {% else %}
